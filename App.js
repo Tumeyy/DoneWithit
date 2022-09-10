@@ -6,11 +6,7 @@ export default function App() {
     <SafeAreaView style={styles.container}>
       <Text>Hello React Native</Text>
       <TouchableHighlight onPress={() => console.log("Image tapped")}>
-        <Image
-          source={{
-            width: 200,
-            height: 300,
-            uri : "https://picsum.photos/200/300"}}/>
+        <View style={{width: 200, height: 70, backgroundColor: "dodgerblue"}}></View>
       </TouchableHighlight>
     </SafeAreaView>
   );
