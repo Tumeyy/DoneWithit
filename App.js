@@ -9,13 +9,13 @@ export default function App() {
       flexDirection: 'row', //horizontal
       justifyContent: 'center', //main
       alignItems: 'center', //secondary
-      alignContent: 'center',
-      flexWrap: 'wrap'
+      alignContent: 'center'
     }}>
       <View style={{
         backgroundColor: 'dodgerblue',
-        width: 100,
-        height: 300,
+        width: 400,
+        flex: -1,
+        height: 100,
       }}/>
       <View style={{
         backgroundColor: 'gold',
@@ -27,16 +27,7 @@ export default function App() {
         width: 100,
         height: 100
       }}/>
-      <View style={{
-        backgroundColor: 'grey',
-        width: 100,
-        height: 100
-      }}/>
-      <View style={{
-        backgroundColor: 'greenyellow',
-        width: 100,
-        height: 100
-      }}/>
+    
     </View>
   );
 }
