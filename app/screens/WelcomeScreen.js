@@ -1,6 +1,7 @@
 import React from 'react';
 import { Image, Text } from 'react-native';
 import { ImageBackground, StyleSheet, View } from 'react-native-web';
+import colors from '../config/colors';
 
 function WelcomeScreen(props) {
     return (
@@ -12,8 +13,12 @@ function WelcomeScreen(props) {
               <Image style={styles.logo} source={require('../assets/logo-red.png')}/>
               <Text>Sell What You Don't Need</Text>
             </View>
-            <View style={styles.loginButton}></View>
-            <View style={styles.registerButton}></View>
+            <View style={styles.loginButton}>
+                <Text>Login</Text>
+            </View>
+            <View style={styles.registerButton}>
+                <Text>Register</Text>                
+            </View>
         </ImageBackground>
     );
 }
@@ -26,7 +31,9 @@ const styles = StyleSheet.create({
     loginButton: {
         width: '100%',
         height: 70,
-        backgroundColor: '#fc5c65',
+        backgroundColor: colors.primary,
+        justifyContent: 'flex-end',
+        alignItems: 'center',
     },
     logo: {
         width: 100,
@@ -40,7 +47,9 @@ const styles = StyleSheet.create({
     registerButton: {
         width: '100%',
         height: 70,
-        backgroundColor: '#4ecdc4',
-    }
+        backgroundColor: colors.secondary,
+        justifyContent: 'flex-end',
+        alignItems: 'center',
+    },
 })
 export default WelcomeScreen;
